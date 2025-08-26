@@ -3,7 +3,9 @@ class arguments
   public static void main(String [] args)
   {
      methods m1 = new methods();
-	 
+	 m1.method1();
+	 m1.method2(2,3);
+	 m1.method2(2,'V',4.0);
   }
 }
 
@@ -11,16 +13,16 @@ class methods
 {
    void method1()
    {
-		System.out.pritln("Empty");
+		System.out.println("Empty");
    }
    void method2(int x,int y)
    {
-		System.out.pritln(x+y);
+		System.out.println(x+y);
    }
-   void method2(int x, char y, double d)
+   void method2(int x, char y, double z)
    {
-	    System.out.pritln(x);
-		System.out.pritln(y);
-		System.out.pritln(z);
+	    System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
    }
 }
